@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/8a7df27cab.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Noughts and Crosses</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="title"><span class="nought">Noughts</span> & <span class="cross">Crosses</span></h1>
+      <section>
+        <table>
+          <tr>
+            <td data-square-index="0" class="square" id="0"></td>
+            <td data-square-index="1" class="square" id="1"></td>
+            <td data-square-index="2" class="square" id="2"></td>
+          </tr>
+          <tr>
+            <td data-square-index="3" class="square" id="3"></td>
+            <td data-square-index="4" class="square" id="4"></td>
+            <td data-square-index="5" class="square" id="5"></td>
+          </tr>
+          <tr>
+            <td data-square-index="6" class="square" id="6"></td>
+            <td data-square-index="7" class="square" id="7"></td>
+            <td data-square-index="8" class="square" id="8"></td>
+          </tr>
+        </table>
+      </section>
+      <button class="reset">Reset</button>
+      <h2 class="status"></h2>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

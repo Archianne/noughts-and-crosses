@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+  background: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+}
+
+h1 span {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.nought {
+  color: #003b6f;
+  background: #ceefff;
+  padding: 0 8px;
+}
+
+.cross {
+  color: #eb0000;
+  background: #ffd6ce;
+  padding: 0 8px;
+}
+
+section {
+  width: 360px;
+  height: 360px;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 30px auto;
+  background: lightcoral;
+  font-size: 40px;
+}
+
+table {
+  table-layout: fixed;
+  width: 360px;
+  height: 360px;
+}
+
+.square,
+td {
+  background: white;
+  border: lightcoral solid 2px;
+  margin: 5px;
+  padding: 5px;
+  width: 33%;
+  height: 33%;
+}
+
+td:hover {
+    background: whitesmoke;
+}
