@@ -2,7 +2,7 @@ body {
   text-align: center;
   background: whitesmoke;
   font-family: "Poppins", sans-serif;
-  margin-top: 10%;
+  margin-top: 80px;
 }
 
 h1 {
@@ -48,6 +48,7 @@ table {
 
 .square,
 td {
+  cursor: pointer;
   background: white;
   border: lightcoral solid 2px;
   margin: 5px;
@@ -57,5 +58,15 @@ td {
 }
 
 td:hover {
-    background: whitesmoke;
+  background: whitesmoke;
+}
+
+button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background: lightcoral;
+  border: #003b6f 2px inset;
+  color: whitesmoke;
+  font-weight: bolder;
 }

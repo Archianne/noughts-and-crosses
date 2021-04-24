@@ -9,7 +9,6 @@ document.querySelectorAll(".square").forEach(function (square) {
 });
 
 function handleSquareChoice(event) {
-
   if (gameOver === true) {
     return;
   }
