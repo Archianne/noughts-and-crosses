@@ -2,14 +2,15 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "x";
 let gameOver = false;
 const status = document.querySelector(".status");
-const reset = document.querySelector("button");
+const resetButton = document.querySelector("button");
+const td = document.querySelectorAll("td");
 
 document.querySelectorAll(".square").forEach(function (square) {
   square.addEventListener("click", handleSquareChoice);
 });
 
 function handleSquareChoice(event) {
-  if (gameOver === true) {
+  if (gameOver) {
     return;
   }
 
@@ -22,8 +23,6 @@ function handleSquareChoice(event) {
 
   board[index] = currentPlayer;
   square.innerHTML = currentPlayer;
-
-  status.innerHTML = `${currentPlayer}'s turn`;
 
   // CHECK IF THERE IS A WINNER
   //   0 1 2
@@ -94,5 +93,17 @@ function handleSquareChoice(event) {
     square.className = "cross";
   }
 
-  button.addEventListener("click", handleSquareChoice);
+  resetButton.addEventListener("click", () => {
+    reset();
+  });
+
+  function reset() {
+    gameOver = false;
+    td.forEach((square) => {
+      board = ["", "", "", "", "", "", "", "", ""];
+      square.innerText = "";
+      status.innerHTML = "";
+      square.classList.remove('nought', 'cross');
+    });
+  }
 }
