@@ -99,8 +99,8 @@ function handleSquareChoice(event) {
 
   function reset() {
     gameOver = false;
+    board = ["", "", "", "", "", "", "", "", ""];
     td.forEach((square) => {
-      board = ["", "", "", "", "", "", "", "", ""];
       square.innerText = "";
       status.innerHTML = "";
       square.classList.remove('nought', 'cross');
