@@ -10,7 +10,7 @@ Simple game, made with HTML, CSS and Vanilla JavaScript.
 - `element.classList.add`
 - `if() else if() else` 
 
-| ✩ |[Play the Game]([https://archianne.github.io/noughts-and-crosses/]) |
+| ✩ |[Play the Game](https://archianne.github.io/noughts-and-crosses/) |
 |--|--|
 | ![picture.png](https://github.com/Archianne/noughts-and-crosses/blob/main/img/picture.png?raw=true) |![gif](https://github.com/Archianne/noughts-and-crosses/blob/main/img/gif.gif?raw=true)|
 
